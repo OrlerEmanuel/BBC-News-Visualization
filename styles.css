@@ -1,0 +1,47 @@
+* { box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  overflow: hidden;
+}
+
+#umap {
+  width: 60%;
+  height: 100%;
+}
+
+aside {
+  width: 40%;
+  height: 100%;
+}
+
+#cloud, #histogram {
+  position: relative;
+  height: 50%;
+}
+
+#cloud p {
+  height: 40px;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+}
+
+#cloud img, #cloud svg {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: calc(100% - 40px);
+}
+
+#cloud img { object-fit: contain; }
+#cloud svg { display: none; }
+#cloud svg text { font-family: Arial, sans-serif; }
